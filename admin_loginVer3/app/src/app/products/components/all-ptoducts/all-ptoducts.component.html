@@ -1,0 +1,78 @@
+
+<div class="cart1">
+  <!--
+    <button class="btncart" routerLink="/cart"><h4>Cart</h4> </button>
+  -->
+  <button class="btncart" routerLink="/cart"><img src="assets/img/22.png"></button>
+  
+  </div>
+
+<div class="box mt-5">
+  <div class="my-2">
+    
+<button id="id"class="btnAdd " data-toggle="modal" data-target="#viewCart" (click)="view()" > <strong>Add Product</strong></button>
+
+
+  </div>
+    <div class="row" *ngIf="!loading">
+       
+        <div class="col-md-3 col-sm-12" *ngFor="let item of products"  >
+            <app-product [data]="item" ></app-product> 
+            <div style="text-align: right;">
+              <button class="text-center w-100" class="btnUp" data-toggle="modal" data-target="#viewCart"(click)="update(item)"><strong>Update</strong></button> 
+
+            </div>
+        </div>
+      
+      </div>
+
+      <div class="text-center w-100" *ngIf="loading">
+        <app-spinner></app-spinner>
+      </div>
+</div>
+<!---
+<div class="modal fade" id="viewCart" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" style="max: width 900%;">
+    <div class="modal-content">
+      <div class="model-header">
+        <h5 class="modal-title" id="exampleModalLabel"> Add Product</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="row">
+            <div class="col-md-4 col-sm-12">
+              <label for="">Title</label>
+              <input type="text" class="form-control" placeholder="title">
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <label for="">Price</label>
+              <input type="number" class="form-control" placeholder="Price">
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <app-select [data]="categ" [title]="'Categories'" (selectedvalue)="filterCateg($event)"></app-select>
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <label for="image">Image</label>
+              <img src="" alt="">
+              <input type="file" class="form-control" >
+            </div>
+            <div class="col-md-8 col-sm-12">
+              <label for="image">Description</label>
+              <textarea class="form-control" placeholder="type here..."></textarea>
+            </div>
+          </div>
+          <div class="d-flex justify-content-end mt-3">
+            <button class="btn btn-success">Add Product</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </div> 
+</div>
+-->
+
+

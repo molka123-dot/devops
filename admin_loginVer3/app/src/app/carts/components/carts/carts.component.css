@@ -1,0 +1,71 @@
+.cartBox{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 0 20px;
+    margin: 50px;
+
+
+}
+.quantity{
+    display: flex;
+    justify-content: space-between;
+}
+.quantity input{
+    marging : 0 20px;
+}
+tbody{
+    border-top: 1px solid rebeccapurple;
+    border-bottom: 1px solid rebeccapurple;
+}
+tbody input{
+    text-align: center;
+}
+tr td{
+border-bottom: 0;
+test-align: center;
+vertical-align: middle;
+}
+img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.headCart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headCart span{
+    font-size: 16px;
+    cursor: pointer;
+}
+.headCart span:hover{
+    background-color: pink;
+    columns: #fff;
+    box-shadow: 0px 5px 10px rgba(red, green, blue, alpha);
+
+}
+.btnDel{
+    background-color:#FFE6FA ;
+    padding: 3px 7px;
+    border-radius: 30px;
+}
+
+
+.btnView{
+    background-color:#E3FDF5 ;
+    padding: 3px 7px;
+    border-radius: 30px;
+}
+.btnApl{
+    background-color:#f2bbe7 ;
+    padding: 3px 7px;
+    border-radius: 30px;
+
+}
+.btnProd{
+    background-color:#f2bbe7 ;
+    padding: 3px 7px;
+    border-radius: 30px;
+
+}
